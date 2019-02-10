@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  test-unit:
+  test-lint:
     docker:
       - image: circleci/node:10.15
     working_directory: ~/repo

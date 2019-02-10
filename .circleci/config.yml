@@ -19,7 +19,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: 'Run lint tests'
-          command: npm test:lint
+          command: npm run test:lint
 
 workflows:
   version: 2

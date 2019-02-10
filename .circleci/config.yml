@@ -49,16 +49,16 @@ jobs:
           command: npm run build
       - run:
           name: 'Pull sitespeed.io docker'
-          command: docker pull sitespeedio/sitespeed.io:8.2.2
+          command: docker pull sitespeedio/sitespeed.io:8.3.0
       - run:
           name: 'Run performance test with native speed'
-          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.2.2 --budget.configPath=sitespeed-budget.json --summary-detail=true "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 --budget.configPath=sitespeed-budget.json --budget.output=json "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
       - run:
           name: 'Run performance test on 3G network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.2.2 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --summary-detail=true "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
       - run:
           name: 'Run performance test on 3G Fast network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.2.2 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --summary-detail=true "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
 
 workflows:
   version: 2

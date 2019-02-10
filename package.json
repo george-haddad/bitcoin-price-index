@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "chart.js": "^2.7.3",
+    "cross-env": "^5.2.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "react": "^16.8.1",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:lint": "eslint src",
     "eject": "react-scripts eject"

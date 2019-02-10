@@ -45,9 +45,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: 'Build site'
-          command: npm run build
-      - run:
           name: 'Pull sitespeed.io docker'
           command: docker pull sitespeedio/sitespeed.io:8.3.0
       - run:

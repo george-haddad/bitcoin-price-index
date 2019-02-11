@@ -20,7 +20,6 @@ jobs:
       - run:
           name: 'Run lint tests'
           command: npm run test:lint
-
   test-sitespeed:
     machine: true
     working_directory: ~/repo
@@ -60,7 +59,6 @@ jobs:
       - run:
           name: 'Run sitespeed unit tests'
           command: npm run test:sitespeed
-
   test-sslyze:
     docker:
       - image: circleci/python:3.7-node
@@ -93,12 +91,12 @@ jobs:
 
 workflows:
   version: 2
-  build:
+  lint-and-test:
     jobs:
       - test-lint
-      - test-sitespeed:
-          - requires:
-              - test-lint
-      - test-sslyze:
-          - requires:
-              - test-sitespeed
+      - test-performance:
+          requires:
+            - test-lint
+      - test-ssl:
+          requires:
+            - test-performance

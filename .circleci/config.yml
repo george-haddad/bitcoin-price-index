@@ -63,10 +63,13 @@ jobs:
     docker:
       - image: circleci/python:3.7-node
     working_directory: ~/repo
-    environment:
-      PR_NUMBER: ${CIRCLE_PULL_REQUEST##*/}
     steps:
       - checkout
+      - run:
+          name: 'Setup env variables'
+          command: |
+            echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            source $BASH_ENV
       - run:
           name: 'Install setuptools'
           command: sudo pip install --upgrade setuptools
@@ -76,6 +79,9 @@ jobs:
       - run:
           name: echo
           command: echo $PR_NUMBER
+      - run:
+          name: echo2
+          command: echo $CIRCLE_PULL_REQUEST##*/
       - run:
           name: 'Run sslyze'
           command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json

@@ -67,7 +67,7 @@ jobs:
       - checkout
       - run:
           name: 'Install setuptools'
-          command: pip install --upgrade setuptools
+          command: sudo pip install --upgrade setuptools
       - run:
           name: 'Install sslyze'
           command: sudo pip install --upgrade sslyze

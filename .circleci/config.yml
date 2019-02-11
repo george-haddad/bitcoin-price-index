@@ -21,8 +21,50 @@ jobs:
           name: 'Run lint tests'
           command: npm run test:lint
 
+  test-performance:
+    machine: true
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: 'Setup env variables'
+          command: |
+            echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
+            # The timstamp is not fixed, it changes over time somehow
+      - run:
+          name: 'Load linux module for traffic shaping'
+          command: sudo modprobe ifb numifbs=1
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run:
+          name: 'Install npm modules'
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: 'Pull sitespeed.io docker'
+          command: docker pull sitespeedio/sitespeed.io:8.3.0
+      - run:
+          name: 'Run sitespeed test with native speed'
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+      - run:
+          name: 'Run sitespeed test on 3G network'
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+      - run:
+          name: 'Run sitespeed test on 3G Fast network'
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+      - run:
+          name: 'Run sitespeed unit tests'
+          command: npm run test:sitespeed
+
 workflows:
   version: 2
   build:
     jobs:
       - test-lint
+      - test-performance

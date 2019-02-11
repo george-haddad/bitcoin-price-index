@@ -17,7 +17,7 @@ describe('Sitespeed performance testing', async => {
         metrics.forEach(mg => {
           it(`should pass the metric ${mg.metric} with a max of ${
             mg.limit
-          }`, async () => {
+          }`, async => {
             if (typeof mg.value === 'string') {
               assert.isAtMost(parseFloat(mg.value), parseFloat(mg.limit));
             } else {

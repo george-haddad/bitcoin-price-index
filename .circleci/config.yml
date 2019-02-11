@@ -66,6 +66,9 @@ jobs:
     steps:
       - checkout
       - run:
+        name: 'Setup env variables'
+        command: echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+      - run:
           name: 'Install setuptools'
           command: sudo pip install --upgrade setuptools
       - run:
@@ -94,9 +97,10 @@ workflows:
   lint-and-test:
     jobs:
       - test-lint
-      - test-sitespeed:
-          requires:
-            - test-lint
-      - test-sslyze:
-          requires:
-            - test-sitespeed
+      - test-sslyze
+      # - test-sitespeed:
+      #     requires:
+      #       - test-lint
+      # - test-sslyze:
+      #     requires:
+      #       - test-sitespeed

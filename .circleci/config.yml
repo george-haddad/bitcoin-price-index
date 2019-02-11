@@ -30,8 +30,6 @@ jobs:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
-            echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
-            # The timstamp is not fixed, it changes over time somehow
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1

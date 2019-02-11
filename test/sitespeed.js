@@ -1,19 +1,19 @@
 const { expect, assert } = require('chai');
 
-describe('Sitespeed performance testing', async () => {
+describe('Sitespeed performance testing', async => {
   const tstamp = process.env.TSTAMP;
-  it('should recognize the sitespeed timestamp', async () => {
+  it('should recognize the sitespeed timestamp', async => {
     expect(tstamp).to.be.a('string');
   });
 
-  describe('on a native speed network', async () => {
+  describe('on a native speed network', async => {
     const nativeResults = require(`../sitespeed-result/${tstamp}/native/budgetResult.json`);
     const failingTests = nativeResults.failing;
 
     Object.keys(failingTests).forEach(page => {
       const metrics = failingTests[page];
 
-      describe(`for page ${page}`, async () => {
+      describe(`for page ${page}`, async => {
         metrics.forEach(mg => {
           it(`should pass the metric ${mg.metric} with a max of ${
             mg.limit

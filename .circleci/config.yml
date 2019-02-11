@@ -94,9 +94,9 @@ workflows:
   lint-and-test:
     jobs:
       - test-lint
-      - test-performance:
+      - test-sitespeed:
           requires:
             - test-lint
-      - test-ssl:
+      - test-sslyze:
           requires:
             - test-sitespeed

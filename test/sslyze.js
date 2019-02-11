@@ -11,8 +11,8 @@ describe('SSLyze security testing', () => {
     hasSha1,
     isCertValid,
     isLeaf,
-    hasHeartbleed;
-  hasCcsInjection;
+    hasHeartbleed,
+    hasCcsInjection;
   before(() => {
     hasStapleExt = commandResults.certificate_has_must_staple_extension;
     matchesHostname = commandResults.certificate_matches_hostname;

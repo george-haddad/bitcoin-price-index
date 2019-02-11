@@ -24,15 +24,13 @@ jobs:
   test-performance:
     machine: true
     working_directory: ~/repo
-    environment:
-      TSTAMP: $(date +"%FT%H-%M-%S")
     steps:
       - checkout
       - run:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
-      #            echo 'export TSTAMP=$(date +"%FT%H-%M-%S")' >> $BASH_ENV
+            echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1

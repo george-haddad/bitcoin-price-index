@@ -11,7 +11,7 @@ describe('SSLyze security testing', () => {
     isCertValid,
     isLeaf,
     isOcspTrusted;
-  beforeAll(() => {
+  before(() => {
     hasStapleExt = commandResults.certificate_has_must_staple_extension;
     matchesHostname = commandResults.certificate_matches_hostname;
     hasAnchor = commandResults.has_anchor_in_certificate_chain;

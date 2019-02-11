@@ -30,6 +30,7 @@ jobs:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1
@@ -74,7 +75,7 @@ jobs:
           command: sudo pip install --upgrade sslyze
       - run:
           name: 'Run sslyze'
-          command: python -m sslyze --regular pwa-staging.bigspring.io --json_out=sslyze-report.json
+          command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -95,5 +96,7 @@ workflows:
   build:
     jobs:
       - test-lint
-      - test-sitespeed
-      - test-sslyze
+      - test-sitespeed:
+          - requires test-lint
+      - test-sslyze:
+          - requires test-sitespeed

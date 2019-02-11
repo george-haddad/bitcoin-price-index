@@ -74,6 +74,9 @@ jobs:
           name: 'Install sslyze'
           command: sudo pip install --upgrade sslyze
       - run:
+          name: echo
+          command: echo $PR_NUMBER
+      - run:
           name: 'Run sslyze'
           command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
       - restore_cache:

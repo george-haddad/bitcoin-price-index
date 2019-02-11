@@ -70,21 +70,6 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             source $BASH_ENV
-      - run:
-          name: 'Install setuptools'
-          command: sudo pip install --upgrade setuptools
-      - run:
-          name: 'Install sslyze'
-          command: sudo pip install --upgrade sslyze
-      - run:
-          name: echo
-          command: echo $PR_NUMBER
-      - run:
-          name: echo2
-          command: echo $CIRCLE_PULL_REQUEST##*/
-      - run:
-          name: 'Run sslyze'
-          command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -97,6 +82,15 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
+          name: 'Install setuptools'
+          command: sudo pip install --upgrade setuptools
+      - run:
+          name: 'Install sslyze'
+          command: sudo pip install --upgrade sslyze
+      - run:
+          name: 'Run sslyze'
+          command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
+      - run:
           name: 'Run SSL security unit tests'
           command: yarn test:sslyze
 
@@ -105,10 +99,9 @@ workflows:
   lint-and-test:
     jobs:
       - test-lint
-      - test-sslyze
-      # - test-sitespeed:
-      #     requires:
-      #       - test-lint
-      # - test-sslyze:
-      #     requires:
-      #       - test-sitespeed
+      - test-sitespeed:
+          requires:
+            - test-lint
+      - test-sslyze:
+          requires:
+            - test-sitespeed

@@ -20,8 +20,7 @@ describe('SSLyze security testing', () => {
     hasSha1 = commandResults.has_sha1_in_certificate_chain;
     isCertValid = commandResults.is_certificate_chain_order_valid;
     isLeaf = commandResults.is_leaf_certificate_ev;
-    hasHeartbleed =
-      commandResults.heartbleed.heartbleed.is_vulnerable_to_heartbleed;
+    hasHeartbleed = commandResults.heartbleed.is_vulnerable_to_heartbleed;
     hasCcsInjection = commandResults.openssl_ccs.is_vulnerable_to_ccs_injection;
   }, test_timeout);
 

@@ -63,11 +63,9 @@ jobs:
     docker:
       - image: circleci/python:3.7-node
     working_directory: ~/repo
+    environment: PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}'
     steps:
       - checkout
-      - run:
-        name: 'Setup env variables'
-        command: echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
       - run:
           name: 'Install setuptools'
           command: sudo pip install --upgrade setuptools

@@ -11,7 +11,8 @@ describe('SSLyze security testing', () => {
     hasSha1,
     isCertValid,
     isLeaf,
-    isOcspTrusted;
+    hasHeartbleed;
+  hasCcsInjection;
   before(() => {
     hasStapleExt = commandResults.certificate_has_must_staple_extension;
     matchesHostname = commandResults.certificate_matches_hostname;
@@ -19,11 +20,13 @@ describe('SSLyze security testing', () => {
     hasSha1 = commandResults.has_sha1_in_certificate_chain;
     isCertValid = commandResults.is_certificate_chain_order_valid;
     isLeaf = commandResults.is_leaf_certificate_ev;
-    isOcspTrusted = commandResults.is_ocsp_response_trusted;
+    hasHeartbleed =
+      commandResults.heartbleed.heartbleed.is_vulnerable_to_heartbleed;
+    hasCcsInjection = commandResults.openssl_ccs.is_vulnerable_to_ccs_injection;
   }, test_timeout);
 
   it('should check if certificate has staple extension', () => {
-    expect(hasStapleExt).to.equal(true);
+    expect(hasStapleExt).to.equal(false);
   });
 
   it('should check if certificate matches hostname', () => {
@@ -31,11 +34,11 @@ describe('SSLyze security testing', () => {
   });
 
   it('should check if certificate has anchor in chain', () => {
-    expect(hasAnchor).to.equal(true);
+    expect(hasAnchor).to.equal(false);
   });
 
   it('should check if certificate has sh1 in chain', () => {
-    expect(hasSha1).to.equal(true);
+    expect(hasSha1).to.equal(false);
   });
 
   it('should check if certificate is chain order valid', () => {
@@ -43,10 +46,14 @@ describe('SSLyze security testing', () => {
   });
 
   it('should check if certificate is leaf', () => {
-    expect(isLeaf).to.equal(true);
+    expect(isLeaf).to.equal(false);
   });
 
-  it('should check if certificate is ocsp response trusted', () => {
-    expect(isOcspTrusted).to.equal(true);
+  it('should check if certificate is vulnrable to heartbleed', () => {
+    expect(hasHeartbleed).to.equal(false);
+  });
+
+  it('should check if certificate is vulnrable to CCS Injection', () => {
+    expect(hasCcsInjection).to.equal(false);
   });
 });

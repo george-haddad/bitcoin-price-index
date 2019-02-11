@@ -89,7 +89,7 @@ jobs:
           command: sudo pip install --upgrade sslyze
       - run:
           name: 'Run sslyze'
-          command: python -m sslyze --regular https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
+          command: python -m sslyze --regular deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/ --json_out=sslyze-report.json
       - run:
           name: 'Run SSL security unit tests'
           command: yarn test:sslyze

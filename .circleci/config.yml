@@ -99,4 +99,4 @@ workflows:
             - test-lint
       - test-ssl:
           requires:
-            - test-performance
+            - test-sitespeed

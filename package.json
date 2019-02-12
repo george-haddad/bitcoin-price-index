@@ -28,7 +28,8 @@
     "build": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test:lint": "eslint src",
-    "test:sitespeed": "mocha test --timeout=10000",
+    "test:sitespeed": "mocha test/sitespeed.js --timeout=10000",
+    "test:sslyze": "mocha test/sslyze.js",
     "eject": "react-scripts eject"
   },
   "browserslist": [

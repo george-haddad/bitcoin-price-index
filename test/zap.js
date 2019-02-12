@@ -78,10 +78,10 @@ describe(`Security attack tests against ${url}`, () => {
   }, test_timeout);
 
   it('should have 0 CWE-525 risk alerts', () => {
-    expect(cweCount['525']).toEqual(0);
+    expect(cweCount['525']).to.equal(0);
   });
 
   it('should have 0 CWE-933 risk alerts', () => {
-    expect(cweCount['933']).toEqual(0);
+    expect(cweCount['933']).to.equal(0);
   });
 });

@@ -105,6 +105,11 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - run:
+        name: 'Setup env variables'
+        command: |
+          echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+          source $BASH_ENV
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -125,13 +130,12 @@ workflows:
   lint-and-test:
     jobs:
       - test-lint
-      #      - test-sitespeed:
-      #          requires:
-      #            - test-lint
-      #- test-sslyze:
-      - test-sslyze
-      #          requires:
-      #            - test-sitespeed
+      - test-sitespeed:
+          requires:
+            - test-lint
+      - test-sslyze:
+          requires:
+            - test-sitespeed
       - test-zap:
           requires:
             - test-sslyze

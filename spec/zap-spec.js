@@ -76,11 +76,19 @@ describe(`Security attack tests against ${url}`, () => {
     }, {});
   }, test_timeout);
 
-  it('should have 0 CWE-525 risk alerts', () => {
+  it('should have 0 CWE-16 risk alerts (X-Frame-Options Header Not Set)', () => {
+    expect(cweCount['16']).toEqual(0);
+  });
+
+  it('should have 0 CWE-525 risk alerts (No Cache-Control and Pragma HTTP Header Set)', () => {
     expect(cweCount['525']).toEqual(0);
   });
 
-  it('should have 0 CWE-933 risk alerts', () => {
+  it('should have 0 CWE-933 risk alerts (Web Browser XSS Protection Not Enabled)', () => {
     expect(cweCount['933']).toEqual(0);
+  });
+
+  it('should have 0 CWE-16 risk alerts (X-Content-Type-Options Header Missing)', () => {
+    expect(cweCount['16']).toEqual(0);
   });
 });

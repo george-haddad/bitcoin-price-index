@@ -1,5 +1,4 @@
 const sslyze = require('../sslyze-report.json');
-const { expect } = require('chai');
 
 const commandResults = sslyze.accepted_targets[0].commands_results;
 const test_timeout = 900000;
@@ -13,7 +12,7 @@ describe('SSLyze security testing', () => {
     isLeaf,
     hasHeartbleed,
     hasCcsInjection;
-  before(() => {
+  beforeAll(() => {
     hasStapleExt =
       commandResults.certinfo.certificate_has_must_staple_extension;
     matchesHostname = commandResults.certinfo.certificate_matches_hostname;
@@ -26,34 +25,34 @@ describe('SSLyze security testing', () => {
   }, test_timeout);
 
   it('should check if certificate has staple extension', () => {
-    expect(hasStapleExt).to.equal(false);
+    expect(hasStapleExt).toEqual(false);
   });
 
   it('should check if certificate matches hostname', () => {
-    expect(matchesHostname).to.equal(true);
+    expect(matchesHostname).toEqual(true);
   });
 
   it('should check if certificate has anchor in chain', () => {
-    expect(hasAnchor).to.equal(false);
+    expect(hasAnchor).toEqual(false);
   });
 
   it('should check if certificate has sh1 in chain', () => {
-    expect(hasSha1).to.equal(false);
+    expect(hasSha1).toEqual(false);
   });
 
   it('should check if certificate is chain order valid', () => {
-    expect(isCertValid).to.equal(true);
+    expect(isCertValid).toEqual(true);
   });
 
   it('should check if certificate is leaf', () => {
-    expect(isLeaf).to.equal(false);
+    expect(isLeaf).toEqual(false);
   });
 
   it('should check if certificate is not vulnrable to heartbleed', () => {
-    expect(hasHeartbleed).to.equal(false);
+    expect(hasHeartbleed).toEqual(false);
   });
 
   it('should check if certificate is not vulnrable to CCS Injection', () => {
-    expect(hasCcsInjection).to.equal(false);
+    expect(hasCcsInjection).toEqual(false);
   });
 });

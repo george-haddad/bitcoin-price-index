@@ -1,10 +1,7 @@
-const { expect, assert } = require('chai');
-
 describe('Sitespeed performance testing', () => {
   const tstamp = process.env.TSTAMP;
-  it('should recognize the sitespeed timestamp', done => {
-    expect(tstamp).to.be.a('string');
-    done();
+  it('should recognize the sitespeed timestamp', () => {
+    expect(typeof tstamp).toBe('string');
   });
 
   describe('on a native speed network', () => {
@@ -20,11 +17,12 @@ describe('Sitespeed performance testing', () => {
             mg.limit
           }`, done => {
             if (typeof mg.value === 'string') {
-              assert.isAtMost(parseFloat(mg.value), parseFloat(mg.limit));
+              expect(parseFloat(mg.value)).toBeLessThanOrEqual(
+                parseFloat(mg.limit),
+              );
             } else {
-              assert.isAtMost(mg.value, mg.limit);
+              expect(mg.value).toBeLessThanOrEqual(mg.limit);
             }
-            done();
           });
         });
       });

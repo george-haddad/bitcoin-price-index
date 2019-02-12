@@ -20,6 +20,7 @@ jobs:
       - run:
           name: 'Run lint tests'
           command: npm run test:lint
+
   test-sitespeed:
     machine: true
     working_directory: ~/repo
@@ -59,6 +60,7 @@ jobs:
       - run:
           name: 'Run sitespeed unit tests'
           command: npm run test:sitespeed
+
   test-sslyze:
     docker:
       - image: circleci/python:3.7-node
@@ -94,6 +96,35 @@ jobs:
           name: 'Run SSL security unit tests'
           command: yarn test:sslyze
 
+  test-zap:
+    docker:
+      - image: circleci/node:10.15
+      - image: owasp/zap2docker-stable
+        name: zap
+        command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: 'Setup env variables'
+          command: |
+            echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            source $BASH_ENV
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run:
+          name: 'Install npm modules'
+          command: npm install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: 'Run ZAP active and passive scans'
+          command: npm run test:zap
+
 workflows:
   version: 2
   lint-and-test:
@@ -105,3 +136,6 @@ workflows:
       - test-sslyze:
           requires:
             - test-sitespeed
+      - test-zap:
+          requires:
+            - test-sslyze

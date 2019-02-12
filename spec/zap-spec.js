@@ -1,7 +1,7 @@
 const ZapClient = require('zaproxy');
 
 const zapOptions = {
-  proxy: 'http://localhost:8090/',
+  proxy: 'http://zap:8090/',
 };
 
 const PR_NUMBER = process.env.PR_NUMBER;

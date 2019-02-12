@@ -2,6 +2,22 @@
 
 [![CircleCI](https://circleci.com/gh/george-haddad/bitcoin-price-index.svg?style=svg&circle-token=0b1efe1fc35a948ab400417b6b3f3a7c1c5c1a98)](https://circleci.com/gh/george-haddad/bitcoin-price-index) [![Netlify Status](https://api.netlify.com/api/v1/badges/92e02947-8a90-4491-a881-b469232e8554/deploy-status)](https://app.netlify.com/sites/peaceful-kepler-549198/deploys)
 
+This project was made to demonstarte automated performance and security testing. Using an existing react application like Bitcoin-Price-Index and strapping a barrage of automated tests to it. Below are the types of tests are are done;
+
+- Lint tests using `eslint`
+- Performance tests using `sitespeed.io`
+  - Full barrage of sitespeed.io tests
+  - Network emulated tests (Native, 3G, 3G-fast)
+  - Runs against a performance budget
+- SSL Security tests using `sslyze`
+- Web Application tests using `ZAP`
+  - Running OWASP's ZAP to actively attack the app and return results
+- App is automatically deployed on `netlify` for each pull request
+
+All tests return results and are run through some `jest` tests to see if they pass or fail our expectations. Also have taken the liberty to dockerize the app in an nginx docker where the barrage of performance and security tests can be run against locally. The main goal of this repo was to demonstrate all this in a CI environment and to run all these tests on every Push to a Pull Request.
+
+## Continue with the original readme below
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -10,6 +26,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## Table of Contents
 
 - [Bitcoin-Price-Index](#bitcoin-price-index)
+  - [Continue with the original readme below](#continue-with-the-original-readme-below)
   - [Table of Contents](#table-of-contents)
   - [Updating to New Releases](#updating-to-new-releases)
   - [Sending Feedback](#sending-feedback)

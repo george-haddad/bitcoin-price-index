@@ -128,7 +128,8 @@ workflows:
       #      - test-sitespeed:
       #          requires:
       #            - test-lint
-      - test-sslyze:
+      #- test-sslyze:
+      - test-sslyze
       #          requires:
       #            - test-sitespeed
       - test-zap:

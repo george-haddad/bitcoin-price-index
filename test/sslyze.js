@@ -1,5 +1,5 @@
-const sslyze = require('../sslyze-report.json');
 const { expect } = require('chai');
+const sslyze = require('../sslyze-report.json');
 
 const commandResults = sslyze.accepted_targets[0].commands_results;
 const test_timeout = 900000;

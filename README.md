@@ -16,6 +16,8 @@ This project was made to demonstarte automated performance and security testing.
 
 All tests return results and are run through some `jest` tests to see if they pass or fail our expectations. Also have taken the liberty to dockerize the app in an nginx docker where the barrage of performance and security tests can be run against locally. The main goal of this repo was to demonstrate all this in a CI environment and to run all these tests on every Push to a Pull Request.
 
+This app is continously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
+
 ## Continue with the original readme below
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

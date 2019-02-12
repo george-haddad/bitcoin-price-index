@@ -106,10 +106,10 @@ jobs:
     steps:
       - checkout
       - run:
-        name: 'Setup env variables'
-        command: |
-          echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
-          source $BASH_ENV
+          name: 'Setup env variables'
+          command: |
+            echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            source $BASH_ENV
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}

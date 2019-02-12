@@ -1,7 +1,7 @@
 describe('Sitespeed performance testing', () => {
   const tstamp = process.env.TSTAMP;
   it('should recognize the sitespeed timestamp', () => {
-    expect(tstamp).toBeString();
+    expect(typeof tstamp).toBe('string');
   });
 
   describe('on a native speed network', () => {

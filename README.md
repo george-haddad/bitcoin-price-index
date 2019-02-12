@@ -16,6 +16,9 @@ This project was made to demonstarte automated performance and security testing.
 
 All tests return results and are run through some `jest` tests to see if they pass or fail our expectations. Also have taken the liberty to dockerize the app in an nginx docker where the barrage of performance and security tests can be run against locally. The main goal of this repo was to demonstrate all this in a CI environment and to run all these tests on every Push to a Pull Request.
 
+A sample [pull request](https://github.com/george-haddad/bitcoin-price-index/pull/6) is available in order to inspect how the automated tests are run on a pull request.
+
+
 ## Continue with the original readme below
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

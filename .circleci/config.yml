@@ -31,6 +31,12 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
+            source $BASH_ENV
+      - run:
+          name: 'Print env variables'
+          command: |
+            echo $PR_NUMBER
+            echo $TSTAMP
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1

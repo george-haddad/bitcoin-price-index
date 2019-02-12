@@ -1,0 +1,3587 @@
+{
+    "accepted_targets": [
+        {
+            "commands_results": {
+                "certinfo": {
+                    "certificate_chain": [
+                        {
+                            "as_pem": "-----BEGIN CERTIFICATE-----\nMIIGWzCCBUOgAwIBAgIMdidMYjVGqvU1UiGeMA0GCSqGSIb3DQEBCwUAMEwxCzAJ\nBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSIwIAYDVQQDExlB\nbHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcyMB4XDTE4MTAxMjA4NTUyMVoXDTIwMTIy\nNDE4MjgxMFowOzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRYw\nFAYDVQQDDA0qLm5ldGxpZnkuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB\nCgKCAQEA7Akdy0jWjGqDTCXP0Jli9uGVVnqwHQI4A0J8L2oiNNSnD5PFWcb3+25E\nM2R9d6x/ue+OY+Vlx9BAqCmYZqFfmd0VmZe8JcYy287llaerN+/SbGTNNBvpF0My\n08D1ef8u/NoVGXFWl6DrEYzB5SksNMkAlaRwycYBHaY1Rzqe5CC15CyD/sjpimyl\nhkpqxH/bEOPkVqxB/b70epsmB1JLNAoXjpVcvZBEErlQXWUV4EVYwCJSTjZK75hn\nL/DmlUWOUdpVUTjb+4bV3K51YBpPrkAghP3V4rsaCEe/mmm4xlRSYQxXQVR2S0xc\nQKoKWu2SScw2J7fShEWPUANckYYd3QIDAQABo4IDTDCCA0gwDgYDVR0PAQH/BAQD\nAgWgMIGJBggrBgEFBQcBAQR9MHswQgYIKwYBBQUHMAKGNmh0dHA6Ly9zZWN1cmUy\nLmFscGhhc3NsLmNvbS9jYWNlcnQvZ3NhbHBoYXNoYTJnMnIxLmNydDA1BggrBgEF\nBQcwAYYpaHR0cDovL29jc3AyLmdsb2JhbHNpZ24uY29tL2dzYWxwaGFzaGEyZzIw\nVwYDVR0gBFAwTjBCBgorBgEEAaAyAQoKMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8v\nd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMAgGBmeBDAECATAJBgNVHRME\nAjAAMD4GA1UdHwQ3MDUwM6AxoC+GLWh0dHA6Ly9jcmwyLmFscGhhc3NsLmNvbS9n\ncy9nc2FscGhhc2hhMmcyLmNybDAlBgNVHREEHjAcgg0qLm5ldGxpZnkuY29tggtu\nZXRsaWZ5LmNvbTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHQYDVR0O\nBBYEFImXjt1/N3A59qSlwlGiDeMxT8lTMB8GA1UdIwQYMBaAFPXN1TwIUPlqTzq3\nl9pWg+Zp0mj3MIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgBVgdTCFpA2AUrq\nC5tXPFPwwOQ4eHAlCBcvo6odBxPTDAAAAWZnfMuNAAAEAwBHMEUCIBnefzvB2v4c\nCgQf8P1+OBdNDy1FvP/az7lBbH0DZeD8AiEAwLLqSa8SkF48/f6mPwJiOVDoI13g\nPIdrYzACARxFzsgAdgCHdb/nWXz4jEOZX73zbv9WjUdWNv9KtWDBtOr/XqCDDwAA\nAWZnfMuIAAAEAwBHMEUCIFiILHiErJISg4RcwNfTtWX2XvwS5odPj0VgIC5iIOJB\nAiEAyYOZyVWCJaBszi5hRW8Z/Vy/Fpg+nki/swuHNyEQfQoAdgC72d+8H4pxtZOU\nI5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWZnfMmEAAAEAwBHMEUCIDAhGi+92UDt\nxatPwOwBH0RVRpqN39M/VD6brSXDSXSEAiEA9y2PFGUh9f2dfIsHAH6WspR8/h0I\nEYq1vjagIsTVLS0wDQYJKoZIhvcNAQELBQADggEBACm/1bA59lz5i5ec4BBryhgH\nWoYS5djKcqfgmuPn/eM7TgsAm0fzg1haLWeqUlfLAuguP4qvWuuSHOKA1HMl2UZ8\nG1+H4M/xwN+Xz2iqnlB0fEB7W424rcY+INTMSSoO3YkTDgAZwe1Hy/WCfnv+FCAw\nHiXo6spq09L67cdFUz6J3sDdKqAcW9vykazTg8j5GCopG/lI10koOYe4Lw16Sk35\nUnFDgqnrqmXSFrqDsZiikyNPp42RZHf53mrxveem42qU2ZdjYxAZzLnS/bgckPcU\nJnuSGgNZNl28tr601CSOcdH0tUFFmrnFBZUUmrMHvSiLLSI0Po+MaMGUWXq+5Aw=\n-----END CERTIFICATE-----\n",
+                            "hpkp_pin": "Eo1yC4g87n1ipYiZg/pEq1Ahe/4JqtcnKwiaEmDP98w=",
+                            "issuer": "countryName=BE, organizationName=GlobalSign nv-sa, commonName=AlphaSSL CA - SHA256 - G2",
+                            "notAfter": "2020-12-24 18:28:10",
+                            "notBefore": "2018-10-12 08:55:21",
+                            "publicKey": {
+                                "algorithm": "RSA",
+                                "exponent": "65537",
+                                "size": "2048"
+                            },
+                            "serialNumber": "36566739977356249666428215710",
+                            "signatureAlgorithm": "sha256",
+                            "subject": "organizationalUnitName=Domain Control Validated, commonName=*.netlify.com",
+                            "subjectAlternativeName": {
+                                "DNS": [
+                                    "*.netlify.com",
+                                    "netlify.com"
+                                ]
+                            }
+                        },
+                        {
+                            "as_pem": "-----BEGIN CERTIFICATE-----\nMIIETTCCAzWgAwIBAgILBAAAAAABRE7wNjEwDQYJKoZIhvcNAQELBQAwVzELMAkG\nA1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv\nb3QgQ0ExGzAZBgNVBAMTEkdsb2JhbFNpZ24gUm9vdCBDQTAeFw0xNDAyMjAxMDAw\nMDBaFw0yNDAyMjAxMDAwMDBaMEwxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9i\nYWxTaWduIG52LXNhMSIwIAYDVQQDExlBbHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcy\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2gHs5OxzYPt+j2q3xhfj\nkmQy1KwA2aIPue3ua4qGypJn2XTXXUcCPI9A1p5tFM3D2ik5pw8FCmiiZhoexLKL\ndljlq10dj0CzOYvvHoN9ItDjqQAu7FPPYhmFRChMwCfLew7sEGQAEKQFzKByvkFs\nMVtI5LHsuSPrVU3QfWJKpbSlpFmFxSWRpv6mCZ8GEG2PgQxkQF5zAJrgLmWYVBAA\ncJjI4e00X9icxw3A1iNZRfz+VXqG7pRgIvGu0eZVRvaZxRsIdF+ssGSEj4k4HKGn\nkCFPAm694GFn1PhChw8K98kEbSqpL+9Cpd/do1PbmB6B+Zpye1reTz5/olig4het\nZwIDAQABo4IBIzCCAR8wDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8C\nAQAwHQYDVR0OBBYEFPXN1TwIUPlqTzq3l9pWg+Zp0mj3MEUGA1UdIAQ+MDwwOgYE\nVR0gADAyMDAGCCsGAQUFBwIBFiRodHRwczovL3d3dy5hbHBoYXNzbC5jb20vcmVw\nb3NpdG9yeS8wMwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5nbG9iYWxzaWdu\nLm5ldC9yb290LmNybDA9BggrBgEFBQcBAQQxMC8wLQYIKwYBBQUHMAGGIWh0dHA6\nLy9vY3NwLmdsb2JhbHNpZ24uY29tL3Jvb3RyMTAfBgNVHSMEGDAWgBRge2YaRQ2X\nyolQL30EzTSo//z9SzANBgkqhkiG9w0BAQsFAAOCAQEAYEBoFkfnFo3bXKFWKsv0\nXJuwHqJL9csCP/gLofKnQtS3TOvjZoDzJUN4LhsXVgdSGMvRqOzm+3M+pGKMgLTS\nxRJzo9P6Aji+Yz2EuJnB8br3n8NA0VgYU8Fi3a8YQn80TsVD1XGwMADH45CuP1eG\nl87qDBKOInDjZqdUfy4oy9RU0LMeYmcI+Sfhy+NmuCQbiWqJRGXy2UzSWByMTsCV\nodTvZy84IOgu/5ZR8LrYPZJwR2UcnnNytGAMXOLRc3bgr07i5TelRS+KIz6HxzDm\nMTh89N1SyvNTBCVXVmaU6Avu5gMUTu79bZRknl7OedSyps9AsUSoPocZXun4IRZZ\nUw==\n-----END CERTIFICATE-----\n",
+                            "hpkp_pin": "amMeV6gb9QNx0Zf7FtJ19Wa/t2B7KpCF/1n2Js3UuSU=",
+                            "issuer": "countryName=BE, organizationName=GlobalSign nv-sa, organizationalUnitName=Root CA, commonName=GlobalSign Root CA",
+                            "notAfter": "2024-02-20 10:00:00",
+                            "notBefore": "2014-02-20 10:00:00",
+                            "publicKey": {
+                                "algorithm": "RSA",
+                                "exponent": "65537",
+                                "size": "2048"
+                            },
+                            "serialNumber": "4835703278459909592593969",
+                            "signatureAlgorithm": "sha256",
+                            "subject": "countryName=BE, organizationName=GlobalSign nv-sa, commonName=AlphaSSL CA - SHA256 - G2"
+                        }
+                    ],
+                    "certificate_has_must_staple_extension": false,
+                    "certificate_included_scts_count": 3,
+                    "certificate_matches_hostname": true,
+                    "has_anchor_in_certificate_chain": false,
+                    "has_sha1_in_certificate_chain": false,
+                    "is_certificate_chain_order_valid": true,
+                    "is_leaf_certificate_ev": false,
+                    "is_ocsp_response_trusted": null,
+                    "ocsp_response": null,
+                    "ocsp_response_status": null,
+                    "path_validation_error_list": [],
+                    "path_validation_result_list": [
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "Android",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\google_aosp.pem",
+                                "version": "9.0.0_r9"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "iOS",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\apple_ios.pem",
+                                "version": "11"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "Java",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\oracle_java.pem",
+                                "version": "jdk-11.0.1"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "macOS",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\apple_macos.pem",
+                                "version": "High Sierra"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {},
+                                    {}
+                                ],
+                                "name": "Mozilla",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\mozilla_nss.pem",
+                                "version": "2018-11-22"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "OPENJDK",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\openjdk.pem",
+                                "version": "jdk-11.0.1"
+                            },
+                            "verify_string": "ok"
+                        },
+                        {
+                            "is_certificate_trusted": true,
+                            "trust_store": {
+                                "ev_oids": [],
+                                "name": "Windows",
+                                "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\microsoft_windows.pem",
+                                "version": "2018-11-04"
+                            },
+                            "verify_string": "ok"
+                        }
+                    ],
+                    "successful_trust_store": {
+                        "ev_oids": [],
+                        "name": "Windows",
+                        "path": "c:\\users\\george haddad\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\sslyze\\plugins\\utils\\trust_store\\pem_files\\microsoft_windows.pem",
+                        "version": "2018-11-04"
+                    },
+                    "symantec_distrust_timeline": null,
+                    "verified_certificate_chain": [
+                        {
+                            "as_pem": "-----BEGIN CERTIFICATE-----\nMIIGWzCCBUOgAwIBAgIMdidMYjVGqvU1UiGeMA0GCSqGSIb3DQEBCwUAMEwxCzAJ\nBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMSIwIAYDVQQDExlB\nbHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcyMB4XDTE4MTAxMjA4NTUyMVoXDTIwMTIy\nNDE4MjgxMFowOzEhMB8GA1UECxMYRG9tYWluIENvbnRyb2wgVmFsaWRhdGVkMRYw\nFAYDVQQDDA0qLm5ldGxpZnkuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB\nCgKCAQEA7Akdy0jWjGqDTCXP0Jli9uGVVnqwHQI4A0J8L2oiNNSnD5PFWcb3+25E\nM2R9d6x/ue+OY+Vlx9BAqCmYZqFfmd0VmZe8JcYy287llaerN+/SbGTNNBvpF0My\n08D1ef8u/NoVGXFWl6DrEYzB5SksNMkAlaRwycYBHaY1Rzqe5CC15CyD/sjpimyl\nhkpqxH/bEOPkVqxB/b70epsmB1JLNAoXjpVcvZBEErlQXWUV4EVYwCJSTjZK75hn\nL/DmlUWOUdpVUTjb+4bV3K51YBpPrkAghP3V4rsaCEe/mmm4xlRSYQxXQVR2S0xc\nQKoKWu2SScw2J7fShEWPUANckYYd3QIDAQABo4IDTDCCA0gwDgYDVR0PAQH/BAQD\nAgWgMIGJBggrBgEFBQcBAQR9MHswQgYIKwYBBQUHMAKGNmh0dHA6Ly9zZWN1cmUy\nLmFscGhhc3NsLmNvbS9jYWNlcnQvZ3NhbHBoYXNoYTJnMnIxLmNydDA1BggrBgEF\nBQcwAYYpaHR0cDovL29jc3AyLmdsb2JhbHNpZ24uY29tL2dzYWxwaGFzaGEyZzIw\nVwYDVR0gBFAwTjBCBgorBgEEAaAyAQoKMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8v\nd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMAgGBmeBDAECATAJBgNVHRME\nAjAAMD4GA1UdHwQ3MDUwM6AxoC+GLWh0dHA6Ly9jcmwyLmFscGhhc3NsLmNvbS9n\ncy9nc2FscGhhc2hhMmcyLmNybDAlBgNVHREEHjAcgg0qLm5ldGxpZnkuY29tggtu\nZXRsaWZ5LmNvbTAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwHQYDVR0O\nBBYEFImXjt1/N3A59qSlwlGiDeMxT8lTMB8GA1UdIwQYMBaAFPXN1TwIUPlqTzq3\nl9pWg+Zp0mj3MIIBfgYKKwYBBAHWeQIEAgSCAW4EggFqAWgAdgBVgdTCFpA2AUrq\nC5tXPFPwwOQ4eHAlCBcvo6odBxPTDAAAAWZnfMuNAAAEAwBHMEUCIBnefzvB2v4c\nCgQf8P1+OBdNDy1FvP/az7lBbH0DZeD8AiEAwLLqSa8SkF48/f6mPwJiOVDoI13g\nPIdrYzACARxFzsgAdgCHdb/nWXz4jEOZX73zbv9WjUdWNv9KtWDBtOr/XqCDDwAA\nAWZnfMuIAAAEAwBHMEUCIFiILHiErJISg4RcwNfTtWX2XvwS5odPj0VgIC5iIOJB\nAiEAyYOZyVWCJaBszi5hRW8Z/Vy/Fpg+nki/swuHNyEQfQoAdgC72d+8H4pxtZOU\nI5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWZnfMmEAAAEAwBHMEUCIDAhGi+92UDt\nxatPwOwBH0RVRpqN39M/VD6brSXDSXSEAiEA9y2PFGUh9f2dfIsHAH6WspR8/h0I\nEYq1vjagIsTVLS0wDQYJKoZIhvcNAQELBQADggEBACm/1bA59lz5i5ec4BBryhgH\nWoYS5djKcqfgmuPn/eM7TgsAm0fzg1haLWeqUlfLAuguP4qvWuuSHOKA1HMl2UZ8\nG1+H4M/xwN+Xz2iqnlB0fEB7W424rcY+INTMSSoO3YkTDgAZwe1Hy/WCfnv+FCAw\nHiXo6spq09L67cdFUz6J3sDdKqAcW9vykazTg8j5GCopG/lI10koOYe4Lw16Sk35\nUnFDgqnrqmXSFrqDsZiikyNPp42RZHf53mrxveem42qU2ZdjYxAZzLnS/bgckPcU\nJnuSGgNZNl28tr601CSOcdH0tUFFmrnFBZUUmrMHvSiLLSI0Po+MaMGUWXq+5Aw=\n-----END CERTIFICATE-----\n",
+                            "hpkp_pin": "Eo1yC4g87n1ipYiZg/pEq1Ahe/4JqtcnKwiaEmDP98w=",
+                            "issuer": "countryName=BE, organizationName=GlobalSign nv-sa, commonName=AlphaSSL CA - SHA256 - G2",
+                            "notAfter": "2020-12-24 18:28:10",
+                            "notBefore": "2018-10-12 08:55:21",
+                            "publicKey": {
+                                "algorithm": "RSA",
+                                "exponent": "65537",
+                                "size": "2048"
+                            },
+                            "serialNumber": "36566739977356249666428215710",
+                            "signatureAlgorithm": "sha256",
+                            "subject": "organizationalUnitName=Domain Control Validated, commonName=*.netlify.com",
+                            "subjectAlternativeName": {
+                                "DNS": [
+                                    "*.netlify.com",
+                                    "netlify.com"
+                                ]
+                            }
+                        },
+                        {
+                            "as_pem": "-----BEGIN CERTIFICATE-----\nMIIETTCCAzWgAwIBAgILBAAAAAABRE7wNjEwDQYJKoZIhvcNAQELBQAwVzELMAkG\nA1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv\nb3QgQ0ExGzAZBgNVBAMTEkdsb2JhbFNpZ24gUm9vdCBDQTAeFw0xNDAyMjAxMDAw\nMDBaFw0yNDAyMjAxMDAwMDBaMEwxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9i\nYWxTaWduIG52LXNhMSIwIAYDVQQDExlBbHBoYVNTTCBDQSAtIFNIQTI1NiAtIEcy\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2gHs5OxzYPt+j2q3xhfj\nkmQy1KwA2aIPue3ua4qGypJn2XTXXUcCPI9A1p5tFM3D2ik5pw8FCmiiZhoexLKL\ndljlq10dj0CzOYvvHoN9ItDjqQAu7FPPYhmFRChMwCfLew7sEGQAEKQFzKByvkFs\nMVtI5LHsuSPrVU3QfWJKpbSlpFmFxSWRpv6mCZ8GEG2PgQxkQF5zAJrgLmWYVBAA\ncJjI4e00X9icxw3A1iNZRfz+VXqG7pRgIvGu0eZVRvaZxRsIdF+ssGSEj4k4HKGn\nkCFPAm694GFn1PhChw8K98kEbSqpL+9Cpd/do1PbmB6B+Zpye1reTz5/olig4het\nZwIDAQABo4IBIzCCAR8wDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8C\nAQAwHQYDVR0OBBYEFPXN1TwIUPlqTzq3l9pWg+Zp0mj3MEUGA1UdIAQ+MDwwOgYE\nVR0gADAyMDAGCCsGAQUFBwIBFiRodHRwczovL3d3dy5hbHBoYXNzbC5jb20vcmVw\nb3NpdG9yeS8wMwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2NybC5nbG9iYWxzaWdu\nLm5ldC9yb290LmNybDA9BggrBgEFBQcBAQQxMC8wLQYIKwYBBQUHMAGGIWh0dHA6\nLy9vY3NwLmdsb2JhbHNpZ24uY29tL3Jvb3RyMTAfBgNVHSMEGDAWgBRge2YaRQ2X\nyolQL30EzTSo//z9SzANBgkqhkiG9w0BAQsFAAOCAQEAYEBoFkfnFo3bXKFWKsv0\nXJuwHqJL9csCP/gLofKnQtS3TOvjZoDzJUN4LhsXVgdSGMvRqOzm+3M+pGKMgLTS\nxRJzo9P6Aji+Yz2EuJnB8br3n8NA0VgYU8Fi3a8YQn80TsVD1XGwMADH45CuP1eG\nl87qDBKOInDjZqdUfy4oy9RU0LMeYmcI+Sfhy+NmuCQbiWqJRGXy2UzSWByMTsCV\nodTvZy84IOgu/5ZR8LrYPZJwR2UcnnNytGAMXOLRc3bgr07i5TelRS+KIz6HxzDm\nMTh89N1SyvNTBCVXVmaU6Avu5gMUTu79bZRknl7OedSyps9AsUSoPocZXun4IRZZ\nUw==\n-----END CERTIFICATE-----\n",
+                            "hpkp_pin": "amMeV6gb9QNx0Zf7FtJ19Wa/t2B7KpCF/1n2Js3UuSU=",
+                            "issuer": "countryName=BE, organizationName=GlobalSign nv-sa, organizationalUnitName=Root CA, commonName=GlobalSign Root CA",
+                            "notAfter": "2024-02-20 10:00:00",
+                            "notBefore": "2014-02-20 10:00:00",
+                            "publicKey": {
+                                "algorithm": "RSA",
+                                "exponent": "65537",
+                                "size": "2048"
+                            },
+                            "serialNumber": "4835703278459909592593969",
+                            "signatureAlgorithm": "sha256",
+                            "subject": "countryName=BE, organizationName=GlobalSign nv-sa, commonName=AlphaSSL CA - SHA256 - G2"
+                        },
+                        {
+                            "as_pem": "-----BEGIN CERTIFICATE-----\nMIIDdTCCAl2gAwIBAgILBAAAAAABFUtaw5QwDQYJKoZIhvcNAQEFBQAwVzELMAkG\nA1UEBhMCQkUxGTAXBgNVBAoTEEdsb2JhbFNpZ24gbnYtc2ExEDAOBgNVBAsTB1Jv\nb3QgQ0ExGzAZBgNVBAMTEkdsb2JhbFNpZ24gUm9vdCBDQTAeFw05ODA5MDExMjAw\nMDBaFw0yODAxMjgxMjAwMDBaMFcxCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9i\nYWxTaWduIG52LXNhMRAwDgYDVQQLEwdSb290IENBMRswGQYDVQQDExJHbG9iYWxT\naWduIFJvb3QgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDaDuaZ\njc6j40+Kfvvxi4Mla+pIH/EqsLmVEQS98GPR4mdmzxzdzxtIK+6NiY6arymAZavp\nxy0Sy6scTHAHoT0KMM0VjU/43dSMUBUc71DuxC73/OlS8pF94G3VNTCOXkNz8kHp\n1Wrjsok6Vjk4bwY8iGlbKk3Fp1S4bInMm/k8yuX9ifUSPJJ4ltbcdG6TRGHRjcdG\nsnUOhugZitVtbNV4FpWi6cgKOOvyJBNPc1STE4U6G7weNLWLBYy5d4ux2x8gkasJ\nU26Qzns3dLlwR5EiUWMWea6xrkEmCMgZK9FGqkjWZCrXgzT/LCrBbBlDSgeF59N8\n9iFo7+ryUp9/k5DPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8E\nBTADAQH/MB0GA1UdDgQWBBRge2YaRQ2XyolQL30EzTSo//z9SzANBgkqhkiG9w0B\nAQUFAAOCAQEA1nPnfE920I2/7LqivjTFKDK1fPxsnCwrvQmeU79rXqoRSLblCKOz\nyj1hTdNGCbM+w6DjY1Ub8rrvrTnhQ7k4o+YviiY776BQVvnGCv04zcQLcFGUl5gE\n38NflNUVyRRBnMRddWQVDf9VMOyGj/8N7yy5Y0b2qvzfvGn9LhJIZJrglfCm7ymP\nAbEVtQwdpf5pLGkkeB6zpxxxYu7KyJesF12KwvhHhm4qxFYxldBniYUr+WymXUad\nDKqC5JlR3XC321Y9YeRq4VzW9v493kHMB65jUr9TU/Qr6cf9tveCX4XSQRjbgbME\nHMUfpIBvFSDJ3gyICh3WZlXi/EjJKSZp4A==\n-----END CERTIFICATE-----\n",
+                            "hpkp_pin": "K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q=",
+                            "issuer": "countryName=BE, organizationName=GlobalSign nv-sa, organizationalUnitName=Root CA, commonName=GlobalSign Root CA",
+                            "notAfter": "2028-01-28 12:00:00",
+                            "notBefore": "1998-09-01 12:00:00",
+                            "publicKey": {
+                                "algorithm": "RSA",
+                                "exponent": "65537",
+                                "size": "2048"
+                            },
+                            "serialNumber": "4835703278459707669005204",
+                            "signatureAlgorithm": "sha1",
+                            "subject": "countryName=BE, organizationName=GlobalSign nv-sa, organizationalUnitName=Root CA, commonName=GlobalSign Root CA"
+                        }
+                    ]
+                },
+                "compression": {
+                    "compression_name": null
+                },
+                "fallback": {
+                    "supports_fallback_scsv": true
+                },
+                "heartbleed": {
+                    "is_vulnerable_to_heartbleed": false
+                },
+                "openssl_ccs": {
+                    "is_vulnerable_to_ccs_injection": false
+                },
+                "reneg": {
+                    "accepts_client_renegotiation": false,
+                    "supports_secure_renegotiation": true
+                },
+                "resum": {
+                    "_rate_result": {
+                        "attempted_resumptions_nb": 5,
+                        "errored_resumptions_list": [],
+                        "failed_resumptions_nb": 5,
+                        "scan_command": {},
+                        "server_info": {
+                            "client_auth_credentials": null,
+                            "client_auth_requirement": "DISABLED",
+                            "highest_ssl_version_supported": "TLSV1_2",
+                            "hostname": "peaceful-kepler-549198.netlify.com",
+                            "http_tunneling_settings": null,
+                            "ip_address": "35.156.141.181",
+                            "openssl_cipher_string_supported": "ECDHE-RSA-AES128-GCM-SHA256",
+                            "port": 443,
+                            "tls_server_name_indication": "peaceful-kepler-549198.netlify.com",
+                            "tls_wrapped_protocol": "HTTPS",
+                            "xmpp_to_hostname": null
+                        },
+                        "successful_resumptions_nb": 0
+                    },
+                    "attempted_resumptions_nb": 5,
+                    "errored_resumptions_list": [],
+                    "failed_resumptions_nb": 5,
+                    "is_ticket_resumption_supported": true,
+                    "successful_resumptions_nb": 0,
+                    "ticket_resumption_error": null,
+                    "ticket_resumption_failed_reason": null
+                },
+                "robot": {
+                    "robot_result_enum": "NOT_VULNERABLE_NO_ORACLE"
+                },
+                "sslv2": {
+                    "accepted_cipher_list": [],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": null,
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC4-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "RC2-CBC-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC2-CBC-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "IDEA-CBC-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC-MD5",
+                            "ssl_version": "SSLV2"
+                        },
+                        {
+                            "handshake_error_message": "TCP / Unexpected EOF",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC3-MD5",
+                            "ssl_version": "SSLV2"
+                        }
+                    ]
+                },
+                "sslv3": {
+                    "accepted_cipher_list": [],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": null,
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "IDEA-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC4-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC2-CBC-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-RC4-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-NULL-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-RC4-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-RC4-MD5",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-SEED-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA256",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "SSLV3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "SSLV3"
+                        }
+                    ]
+                },
+                "tlsv1": {
+                    "accepted_cipher_list": [],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": null,
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "IDEA-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC4-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC2-CBC-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-RC4-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-RC4-MD5",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1"
+                        }
+                    ]
+                },
+                "tlsv1_1": {
+                    "accepted_cipher_list": [],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": null,
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "IDEA-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC4-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC2-CBC-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-RC4-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-RC4-MD5",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_1"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: protocol version ",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_1"
+                        }
+                    ]
+                },
+                "tlsv1_2": {
+                    "accepted_cipher_list": [
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "AES256-GCM-SHA384",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "AES256-SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "AES256-SHA",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "AES128-GCM-SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "AES128-SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "AES128-SHA",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "ECDHE-RSA-AES256-GCM-SHA384",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA384",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "ECDHE-RSA-AES256-SHA",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "ECDHE-RSA-AES128-GCM-SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "ECDHE-RSA-AES128-SHA",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "AES256-CCM8",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "AES256-CCM",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "AES128-CCM8",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "AES128-CCM",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_2"
+                        }
+                    ],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": {
+                        "is_anonymous": false,
+                        "key_size": 128,
+                        "openssl_name": "ECDHE-RSA-AES128-GCM-SHA256",
+                        "post_handshake_response": "HTTP 200 OK",
+                        "ssl_version": "TLSV1_2"
+                    },
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "RC4-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "NULL-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "IDEA-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC4-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-RC2-CBC-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "AECDH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDH-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-CHACHA20-POLY1305",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-CAMELLIA256-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-RC4-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-NULL-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-CHACHA20-POLY1305",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-CAMELLIA256-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-RC4-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / No ciphers available",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "ADH-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-RC4-MD5",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": true,
+                            "openssl_name": "EXP-ADH-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CHACHA20-POLY1305",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-CCM",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-RSA-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-SEED-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-CAMELLIA128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES256-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-AES128-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EDH-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-DES-CBC3-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "EXP-EDH-DSS-DES-CBC-SHA",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-CCM8",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES256-CCM",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-CCM8",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-AES128-CCM",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-ARIA256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ECDSA-ARIA128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ARIA256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ECDHE-ARIA128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES256-CCM8",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-CCM8",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-AES128-CCM",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-ARIA256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-RSA-ARIA128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-ARIA256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "DHE-DSS-ARIA128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ARIA256-GCM-SHA384",
+                            "ssl_version": "TLSV1_2"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "ARIA128-GCM-SHA256",
+                            "ssl_version": "TLSV1_2"
+                        }
+                    ]
+                },
+                "tlsv1_3": {
+                    "accepted_cipher_list": [
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "TLS_CHACHA20_POLY1305_SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_3"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 256,
+                            "openssl_name": "TLS_AES_256_GCM_SHA384",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_3"
+                        },
+                        {
+                            "is_anonymous": false,
+                            "key_size": 128,
+                            "openssl_name": "TLS_AES_128_GCM_SHA256",
+                            "post_handshake_response": "HTTP 200 OK",
+                            "ssl_version": "TLSV1_3"
+                        }
+                    ],
+                    "errored_cipher_list": [],
+                    "preferred_cipher": {
+                        "is_anonymous": false,
+                        "key_size": 256,
+                        "openssl_name": "TLS_AES_256_GCM_SHA384",
+                        "post_handshake_response": "HTTP 200 OK",
+                        "ssl_version": "TLSV1_3"
+                    },
+                    "rejected_cipher_list": [
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "TLS_AES_128_CCM_SHA256",
+                            "ssl_version": "TLSV1_3"
+                        },
+                        {
+                            "handshake_error_message": "TLS / Alert: handshake failure",
+                            "is_anonymous": false,
+                            "openssl_name": "TLS_AES_128_CCM_8_SHA256",
+                            "ssl_version": "TLSV1_3"
+                        }
+                    ]
+                }
+            },
+            "server_info": {
+                "client_auth_credentials": null,
+                "client_auth_requirement": "DISABLED",
+                "highest_ssl_version_supported": "TLSV1_2",
+                "hostname": "peaceful-kepler-549198.netlify.com",
+                "http_tunneling_settings": null,
+                "ip_address": "35.156.141.181",
+                "openssl_cipher_string_supported": "ECDHE-RSA-AES128-GCM-SHA256",
+                "port": 443,
+                "tls_server_name_indication": "peaceful-kepler-549198.netlify.com",
+                "tls_wrapped_protocol": "HTTPS",
+                "xmpp_to_hostname": null
+            }
+        }
+    ],
+    "invalid_targets": [],
+    "sslyze_url": "https://github.com/nabla-c0d3/sslyze",
+    "sslyze_version": "2.0.1",
+    "total_scan_time": "22.708056926727295"
+}

@@ -1,8 +1,7 @@
-const { expect } = require('chai');
 const ZapClient = require('zaproxy');
 
 const zapOptions = {
-  proxy: 'http://zap:8090/',
+  proxy: 'http://localhost:8090/',
 };
 
 const PR_NUMBER = process.env.PR_NUMBER;
@@ -69,7 +68,7 @@ const waitForActiveScan = async id => {
 
 describe(`Security attack tests against ${url}`, () => {
   let cweCount;
-  before(async () => {
+  beforeAll(async () => {
     const attackResults = await runZapAttack();
     cweCount = attackResults.alerts.reduce(function(sums, entry) {
       sums[entry.cweid] = (sums[entry.cweid] || 0) + 1;
@@ -78,10 +77,10 @@ describe(`Security attack tests against ${url}`, () => {
   }, test_timeout);
 
   it('should have 0 CWE-525 risk alerts', () => {
-    expect(cweCount['525']).to.equal(0);
+    expect(cweCount['525']).toEqual(0);
   });
 
   it('should have 0 CWE-933 risk alerts', () => {
-    expect(cweCount['933']).to.equal(0);
+    expect(cweCount['933']).toEqual(0);
   });
 });

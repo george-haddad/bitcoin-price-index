@@ -6,7 +6,7 @@
     },
     {
       "metric": "statistics.visualMetrics.FirstVisualChange.median",
-      "max": 2000
+      "max": 3000
     }
   ],
   "coach.pageSummary": [

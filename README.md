@@ -18,6 +18,8 @@ All tests return results and are run through some `jest` tests to see if they pa
 
 A sample [pull request](https://github.com/george-haddad/bitcoin-price-index/pull/6) is available in order to inspect how the automated tests are run on a pull request.
 
+![auto-tests-pr](https://user-images.githubusercontent.com/3069650/52633581-92592580-2ecd-11e9-83f9-4138635b06a8.gif)
+
 This app is continously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
 
 ## Continue with the original readme below

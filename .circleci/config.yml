@@ -79,7 +79,7 @@ jobs:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
-            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.com"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
+            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="peaceful-kepler-549198.netlify.com"; else export TARGET_URL="deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: 'Print env variables'

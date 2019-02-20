@@ -31,12 +31,14 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
+            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.com"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: 'Print env variables'
           command: |
             echo $PR_NUMBER
             echo $TSTAMP
+            echo $TARGET_URL
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1
@@ -53,16 +55,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: 'Pull sitespeed.io docker'
-          command: docker pull sitespeedio/sitespeed.io:8.3.0
+          command: docker pull sitespeedio/sitespeed.io:8.6.2
       - run:
           name: 'Run sitespeed test with native speed'
-          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.6.2 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.6.2 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G Fast network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.3.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "https://deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.6.2 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
       - run:
           name: 'Run sitespeed unit tests'
           command: npm run test:sitespeed
@@ -77,7 +79,13 @@ jobs:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
+            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="peaceful-kepler-549198.netlify.com"; else export TARGET_URL="deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
+      - run:
+          name: 'Print env variables'
+          command: |
+            echo $PR_NUMBER
+            echo $TARGET_URL
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -97,7 +105,7 @@ jobs:
           command: sudo pip install --upgrade sslyze
       - run:
           name: 'Run sslyze'
-          command: python -m sslyze --regular deploy-preview-$PR_NUMBER--peaceful-kepler-549198.netlify.com --json_out=sslyze-report.json
+          command: python -m sslyze --regular $TARGET_URL --json_out=sslyze-report.json
       - run:
           name: 'Run SSL security unit tests'
           command: yarn test:sslyze
@@ -116,6 +124,10 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             source $BASH_ENV
+      - run:
+          name: 'Print env variables'
+          command: |
+            echo $PR_NUMBER
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}

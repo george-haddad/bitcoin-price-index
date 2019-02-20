@@ -38,6 +38,7 @@ jobs:
           command: |
             echo $PR_NUMBER
             echo $TSTAMP
+            echo $TARGET_URL
       - run:
           name: 'Load linux module for traffic shaping'
           command: sudo modprobe ifb numifbs=1
@@ -80,6 +81,11 @@ jobs:
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.com"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
+      - run:
+          name: 'Print env variables'
+          command: |
+            echo $PR_NUMBER
+            echo $TARGET_URL
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -118,6 +124,10 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             source $BASH_ENV
+      - run:
+          name: 'Print env variables'
+          command: |
+            echo $PR_NUMBER
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}

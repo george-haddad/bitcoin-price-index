@@ -7,7 +7,7 @@
     "cross-env": "^5.2.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
-    "react": "^16.8.2",
+    "react": "16.8.2",
     "react-chartjs": "^1.2.0",
     "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.8.2",

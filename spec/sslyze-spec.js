@@ -25,7 +25,7 @@ describe('SSLyze security testing', () => {
   }, test_timeout);
 
   it('should check if certificate has staple extension', () => {
-    expect(hasStapleExt).toEqual(false);
+    expect(hasStapleExt).toEqual(true);
   });
 
   it('should check if certificate matches hostname', () => {
@@ -33,19 +33,15 @@ describe('SSLyze security testing', () => {
   });
 
   it('should check if certificate has anchor in chain', () => {
-    expect(hasAnchor).toEqual(false);
+    expect(hasAnchor).toEqual(true);
   });
 
   it('should check if certificate has sh1 in chain', () => {
-    expect(hasSha1).toEqual(false);
-  });
-
-  it('should check if certificate is chain order valid', () => {
-    expect(isCertValid).toEqual(true);
+    expect(hasSha1).toEqual(true);
   });
 
   it('should check if certificate is leaf', () => {
-    expect(isLeaf).toEqual(false);
+    expect(isLeaf).toEqual(true);
   });
 
   it('should check if certificate is not vulnrable to heartbleed', () => {

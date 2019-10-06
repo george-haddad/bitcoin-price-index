@@ -11,12 +11,11 @@
     "react-chartjs-2": "^2.8.0",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
-    "snyk": "^1.231.0",
     "zaproxy": "^1.0.1"
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.18.2",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-react": "^7.16.0",
     "eslint": "^6.5.1",
@@ -32,14 +31,12 @@
     "test:sitespeed": "jest spec/sitespeed-spec --timeout=10000",
     "test:sslyze": "jest spec/sslyze-spec",
     "test:zap": "jest spec/zap-spec",
-    "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect"
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "snyk": true
+  ]
 }

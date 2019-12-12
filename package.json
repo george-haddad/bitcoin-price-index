@@ -13,7 +13,7 @@
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "zaproxy": "^1.0.1",
-    "snyk": "^1.231.0"
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "eslint-plugin-import": "^2.18.2",
@@ -34,7 +34,8 @@
     "test:sslyze": "jest spec/sslyze-spec",
     "test:zap": "jest spec/zap-spec",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect"
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",

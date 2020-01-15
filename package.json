@@ -3,27 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.3",
     "cross-env": "^6.0.3",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "react": "^16.10.2",
+    "react": "^16.12.0",
     "react-chartjs": "^1.2.0",
     "react-chartjs-2": "^2.8.0",
-    "react-dom": "^16.10.2",
+    "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
-    "zaproxy": "^1.0.1",
-    "snyk": "^1.231.0"
+    "zaproxy": "^1.0.1"
   },
   "devDependencies": {
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-config-prettier": "^6.3.0",
-    "eslint-plugin-jest": "^23.0.0",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint": "^6.8.0",
     "jest": "^24.9.0",
     "jest-extended": "^0.11.2",
-    "prettier-eslint": "^9.0.0"
+    "prettier-eslint": "^9.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,14 +32,12 @@
     "test:sitespeed": "jest spec/sitespeed-spec --timeout=10000",
     "test:sslyze": "jest spec/sslyze-spec",
     "test:zap": "jest spec/zap-spec",
-    "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect"
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "snyk": true
+  ]
 }

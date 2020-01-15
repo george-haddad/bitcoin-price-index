@@ -11,14 +11,14 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run:
-          name: 'Install npm modules'
+          name: "Install npm modules"
           command: npm install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: 'Run lint tests'
+          name: "Run lint tests"
           command: npm run test:lint
 
   test-sitespeed:
@@ -27,46 +27,46 @@ jobs:
     steps:
       - checkout
       - run:
-          name: 'Setup env variables'
+          name: "Setup env variables"
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
             echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.com"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
-          name: 'Print env variables'
+          name: "Print env variables"
           command: |
             echo $PR_NUMBER
             echo $TSTAMP
             echo $TARGET_URL
       - run:
-          name: 'Load linux module for traffic shaping'
+          name: "Load linux module for traffic shaping"
           command: sudo modprobe ifb numifbs=1
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run:
-          name: 'Install npm modules'
+          name: "Install npm modules"
           command: npm install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: 'Pull sitespeed.io docker'
+          name: "Pull sitespeed.io docker"
           command: docker pull sitespeedio/sitespeed.io:8.12.0
       - run:
-          name: 'Run sitespeed test with native speed'
-          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.12.0 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
+          name: "Run sitespeed test with native speed"
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
       - run:
-          name: 'Run sitespeed test on 3G network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.12.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
+          name: "Run sitespeed test on 3G network"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
       - run:
-          name: 'Run sitespeed test on 3G Fast network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:8.12.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
+          name: "Run sitespeed test on 3G Fast network"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
       - run:
-          name: 'Run sitespeed unit tests'
+          name: "Run sitespeed unit tests"
           command: npm run test:sitespeed
 
   test-sslyze:
@@ -76,13 +76,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: 'Setup env variables'
+          name: "Setup env variables"
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="peaceful-kepler-549198.netlify.com"; else export TARGET_URL="deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
-          name: 'Print env variables'
+          name: "Print env variables"
           command: |
             echo $PR_NUMBER
             echo $TARGET_URL
@@ -91,23 +91,23 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run:
-          name: 'Install npm modules'
+          name: "Install npm modules"
           command: npm install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: 'Install setuptools'
+          name: "Install setuptools"
           command: sudo pip install --upgrade setuptools
       - run:
-          name: 'Install sslyze'
+          name: "Install sslyze"
           command: sudo pip install --upgrade sslyze
       - run:
-          name: 'Run sslyze'
+          name: "Run sslyze"
           command: python -m sslyze --regular $TARGET_URL --json_out=sslyze-report.json
       - run:
-          name: 'Run SSL security unit tests'
+          name: "Run SSL security unit tests"
           command: yarn test:sslyze
 
   test-zap:
@@ -120,12 +120,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: 'Setup env variables'
+          name: "Setup env variables"
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             source $BASH_ENV
       - run:
-          name: 'Print env variables'
+          name: "Print env variables"
           command: |
             echo $PR_NUMBER
       - restore_cache:
@@ -133,14 +133,14 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       - run:
-          name: 'Install npm modules'
+          name: "Install npm modules"
           command: npm install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
-          name: 'Run ZAP active and passive scans'
+          name: "Run ZAP active and passive scans"
           command: npm run test:zap
 
 workflows:

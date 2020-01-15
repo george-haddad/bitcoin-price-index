@@ -55,7 +55,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: "Pull sitespeed.io docker"
-          command: docker pull sitespeedio/sitespeed.io:8.12.0
+          command: docker pull sitespeedio/sitespeed.io:11.9.3
       - run:
           name: "Run sitespeed test with native speed"
           command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"

@@ -20,6 +20,8 @@ A sample [pull request](https://github.com/george-haddad/bitcoin-price-index/pul
 
 ![auto-tests-pr](https://user-images.githubusercontent.com/3069650/52633581-92592580-2ecd-11e9-83f9-4138635b06a8.gif)
 
+This app is continously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
+
 ## Continue with the original readme below
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

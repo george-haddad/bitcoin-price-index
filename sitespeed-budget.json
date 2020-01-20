@@ -2,11 +2,11 @@
   "browsertime.pageSummary": [
     {
       "metric": "statistics.timings.firstPaint.median",
-      "max": 4500
+      "max": 4600
     },
     {
       "metric": "statistics.visualMetrics.FirstVisualChange.median",
-      "max": 4500
+      "max": 4600
     }
   ],
   "coach.pageSummary": [

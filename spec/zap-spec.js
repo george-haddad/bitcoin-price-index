@@ -14,7 +14,7 @@ if (PR_NUMBER) {
 
 const zaproxy = new ZapClient(zapOptions);
 
-// Take no longer than 15 minutes for the performance test to complete
+// Take no longer than 15 minutes for the application attacks to complete
 const test_timeout = 900000;
 
 const delay = time => new Promise(resolve => setTimeout(resolve, time));
@@ -88,7 +88,7 @@ describe(`Security attack tests against ${url}`, () => {
     expect(cweCount['933']).toEqual(0);
   });
 
-  it('should have 0 CWE-16 risk alerts (X-Content-Type-Options Header Missing)', () => {
-    expect(cweCount['16']).toEqual(0);
+  it('should have 0 CWE-200 risk alerts (Information Disclosure)', () => {
+    expect(cweCount['200']).toEqual(0);
   });
 });

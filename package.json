@@ -4,13 +4,13 @@
   "private": true,
   "dependencies": {
     "chart.js": "^2.9.3",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.1",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "react": "^16.13.0",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.0",
-    "snyk": "^1.297.3",
+    "snyk": "^1.297.4",
     "react-scripts": "3.4.0"
   },
   "devDependencies": {

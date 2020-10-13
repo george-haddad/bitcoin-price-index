@@ -10,11 +10,11 @@ describe('SSLyze security testing', () => {
     hasCcsInjection = commandResults.openssl_ccs.is_vulnerable_to_ccs_injection;
   }, test_timeout);
 
-  it('should check if certificate is not vulnrable to heartbleed', () => {
+  it('should check if certificate is not vulnerable to heartbleed', () => {
     expect(hasHeartbleed).toEqual(false);
   });
 
-  it('should check if certificate is not vulnrable to CCS Injection', () => {
+  it('should check if certificate is not vulnerable to CCS Injection', () => {
     expect(hasCcsInjection).toEqual(false);
   });
 });

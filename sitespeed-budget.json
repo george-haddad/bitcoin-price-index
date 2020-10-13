@@ -2,11 +2,11 @@
   "browsertime.pageSummary": [
     {
       "metric": "statistics.timings.firstPaint.median",
-      "max": 4800
+      "max": 6000
     },
     {
       "metric": "statistics.visualMetrics.FirstVisualChange.median",
-      "max": 4800
+      "max": 6000
     }
   ],
   "coach.pageSummary": [
@@ -20,7 +20,7 @@
     },
     {
       "metric": "advice.info.iframes",
-      "max": 0
+      "max": 1
     },
     {
       "metric": "advice.info.pageCookies.max",
@@ -38,7 +38,7 @@
     },
     {
       "metric": "missingCompression",
-      "max": 0
+      "max": 1
     },
     {
       "metric": "contentTypes.css.requests",
@@ -50,7 +50,7 @@
     },
     {
       "metric": "documentRedirects",
-      "max": 0
+      "max": 1
     }
   ]
 }

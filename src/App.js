@@ -99,7 +99,7 @@ class App extends Component {
             {this.state.currency !== 'EUR' && (
               <div>
                 <a
-                  href="#"
+                  href="#top"
                   className="link"
                   onClick={() => this.setCurrency('EUR')}
                   style={{ color: 'black', fontSize: 16, fontFamily: 'Bungee' }}

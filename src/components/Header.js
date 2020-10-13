@@ -20,7 +20,6 @@ const Header = props => (
         Powered by{' '}
         <a
           className="link"
-          target="_blank"
           href="https://www.coindesk.com/price/"
         >
           CoinDesk

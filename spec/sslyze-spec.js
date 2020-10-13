@@ -1,5 +1,7 @@
 const sslyze = require('../sslyze-report.json');
 
+console.log(JSON.stringify(sslyze));
+
 const commandResults = sslyze.accepted_targets[0].commands_results;
 const test_timeout = 900000;
 

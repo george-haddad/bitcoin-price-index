@@ -2,7 +2,7 @@ version: 2
 jobs:
   test-lint:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/node:12.16
     working_directory: ~/repo
     steps:
       - checkout
@@ -31,7 +31,7 @@ jobs:
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
             echo 'export TSTAMP=$(date +"%F")' >> $BASH_ENV
-            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.com"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
+            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="https://peaceful-kepler-549198.netlify.app"; else export TARGET_URL="https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.app"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: 'Print env variables'
@@ -55,16 +55,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: 'Pull sitespeed.io docker'
-          command: docker pull sitespeedio/sitespeed.io:11.9.3
+          command: docker pull sitespeedio/sitespeed.io:15.4.0
       - run:
           name: 'Run sitespeed test with native speed'
-          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G Fast network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
       - run:
           name: 'Run sitespeed unit tests'
           command: npm run test:sitespeed
@@ -79,7 +79,7 @@ jobs:
           name: 'Setup env variables'
           command: |
             echo 'export PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}' >> $BASH_ENV
-            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="peaceful-kepler-549198.netlify.com"; else export TARGET_URL="deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com"; fi' >> $BASH_ENV
+            echo 'if [[ -z "${PR_NUMBER}" ]]; then export TARGET_URL="peaceful-kepler-549198.netlify.app:443"; else export TARGET_URL="deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.app:443"; fi' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: 'Print env variables'
@@ -112,7 +112,7 @@ jobs:
 
   test-zap:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/node:12.16
       - image: owasp/zap2docker-stable
         name: zap
         command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true

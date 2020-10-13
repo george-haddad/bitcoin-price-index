@@ -7,9 +7,9 @@ const zapOptions = {
 const PR_NUMBER = process.env.PR_NUMBER;
 let url;
 if (PR_NUMBER) {
-  url = `https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.com/`;
+  url = `https://deploy-preview-${PR_NUMBER}--peaceful-kepler-549198.netlify.app/`;
 } else {
-  url = `https://peaceful-kepler-549198.netlify.com/`;
+  url = `https://peaceful-kepler-549198.netlify.app/`;
 }
 
 const zaproxy = new ZapClient(zapOptions);

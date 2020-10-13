@@ -1,15 +1,14 @@
 const sslyze = require('../sslyze-report.json');
 
-console.log(JSON.stringify(sslyze));
+const scanResults = sslyze.server_scan_results[0].scan_commands_results;
 
-const commandResults = sslyze.accepted_targets[0].commands_results;
 const test_timeout = 900000;
 
 describe('SSLyze security testing', () => {
   let hasHeartbleed, hasCcsInjection;
   beforeAll(() => {
-    hasHeartbleed = commandResults.heartbleed.is_vulnerable_to_heartbleed;
-    hasCcsInjection = commandResults.openssl_ccs.is_vulnerable_to_ccs_injection;
+    hasHeartbleed = scanResults.heartbleed.is_vulnerable_to_heartbleed;
+    hasCcsInjection = scanResults.openssl_ccs_injection.is_vulnerable_to_ccs_injection;
   }, test_timeout);
 
   it('should check if certificate is not vulnerable to heartbleed', () => {

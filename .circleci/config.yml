@@ -2,7 +2,7 @@ version: 2
 jobs:
   test-lint:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/node:12.16
     working_directory: ~/repo
     steps:
       - checkout
@@ -55,16 +55,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: 'Pull sitespeed.io docker'
-          command: docker pull sitespeedio/sitespeed.io:11.9.3
+          command: docker pull sitespeedio/sitespeed.io:15.4.0
       - run:
           name: 'Run sitespeed test with native speed'
-          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
+          command: docker run --shm-size=1g --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/native "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 -c 3g --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3g "$TARGET_URL/"
       - run:
           name: 'Run sitespeed test on 3G Fast network'
-          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:11.9.3 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
+          command: docker run --shm-size=1g --cap-add=NET_ADMIN --rm -v "$(pwd)":/sitespeed.io sitespeedio/sitespeed.io:15.4.0 -c 3gfast --browsertime.connectivity.engine=throttle --budget.configPath=sitespeed-budget.json --budget.output=json --budget.suppressExitCode=true --outputFolder=sitespeed-result/$TSTAMP/3gfast "$TARGET_URL/"
       - run:
           name: 'Run sitespeed unit tests'
           command: npm run test:sitespeed
@@ -112,7 +112,7 @@ jobs:
 
   test-zap:
     docker:
-      - image: circleci/node:10.15
+      - image: circleci/node:12.16
       - image: owasp/zap2docker-stable
         name: zap
         command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "cross-env": "^7.0.2",
     "lodash": "^4.17.17",
     "moment": "^2.24.0",

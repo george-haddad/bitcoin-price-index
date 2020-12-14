@@ -2,25 +2,105 @@
 
 [![CircleCI](https://circleci.com/gh/george-haddad/bitcoin-price-index.svg?style=svg&circle-token=0b1efe1fc35a948ab400417b6b3f3a7c1c5c1a98)](https://circleci.com/gh/george-haddad/bitcoin-price-index) [![Netlify Status](https://api.netlify.com/api/v1/badges/92e02947-8a90-4491-a881-b469232e8554/deploy-status)](https://app.netlify.com/sites/peaceful-kepler-549198/deploys)
 
-This project was made to demonstarte automated performance and security testing. Using an existing react application like Bitcoin-Price-Index and strapping a barrage of automated tests to it. Below are the types of tests are are done;
+## DevSecOps Intro
 
-- Lint tests using `eslint`
-- Performance tests using `sitespeed.io`
-  - Full barrage of sitespeed.io tests
-  - Network emulated tests (Native, 3G, 3G-fast)
+This project was created to demonstrate how to integrate performance and security testing to an existing web application. This webapp was originally cloned from [MarkFChavez's bitcoin-price-index](https://github.com/MarkFChavez/bitcoin-price-index) repo. The aim is that this is a simple webapp that can be deployed easily without having to touch any of the code. Applying performance and security tests should be straightforward and be entirely decoupled from the code base. The following tests were added to the project:
+
+### Augmented Tests
+
+- Lint tests using [eslint](https://eslint.org/)
+- Performance tests using [sitespeed.io](https://www.sitespeed.io/)
+  - Network emulated performance tests (Native, 3G, 3G-fast)
   - Runs against a performance budget
-- SSL Security tests using `sslyze`
-- Web Application tests using `ZAP`
+- SSL Security tests using [sslyze](https://github.com/nabla-c0d3/sslyze)
+- Web Application tests using [ZAP](https://www.zaproxy.org/)
   - Running OWASP's ZAP to actively attack the app and return results
-- App is automatically deployed on `netlify` for each pull request
+- [CodeQL](https://securitylab.github.com/tools/codeql) source code analysis
+- [OSSAR](https://github.com/github/ossar-action) source code analysis
 
-All tests return results and are run through some `jest` tests to see if they pass or fail our expectations. Also have taken the liberty to dockerize the app in an nginx docker where the barrage of performance and security tests can be run against locally. The main goal of this repo was to demonstrate all this in a CI environment and to run all these tests on every Push to a Pull Request.
+- [CircleCI](https://circleci.com/)
+  - Used for continous integration
+- [Netlify](https://www.netlify.com/)
+  - Used for contunous deployment
+  - Build and internal tests
+- [Github](https://github.com/)
+  - Used for source code versioning
+  - Used for SAST plugins (CodeQL & OSSAR github actions)
 
-A sample [pull request](https://github.com/george-haddad/bitcoin-price-index/pull/6) is available in order to inspect how the automated tests are run on a pull request.
+### Scripting The Tests
 
-![auto-tests-pr](https://user-images.githubusercontent.com/3069650/52633581-92592580-2ecd-11e9-83f9-4138635b06a8.gif)
+All tests return results and are run through [jest](https://jestjs.io/) tests to see if they pass or fail our expectations. This is pretty useful because we might want to refuse a pull request to merge if a test fails or if there is some security related event detected. This can also be used to trigger an event to a team to investigate certain alerts.
 
-This app is continously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
+### What Are We Testing?
+
+The following are being tested for now, simple but demonstrates that you can do A LOT MORE.
+
+- Standard linting of the source code
+- Sitespeed.io full performance tests
+  - First Paint median should be no more than max 6000ms (`browsertime` plugin)
+  - First Visual Change median should be no more than max 6000ms (`browsertime` plugin)
+  - Performance Score of 75 (`coach` plugin)
+  - Max DOM depth of 10 (`coach` plugin)
+  - One iFrame max (`coach` plugin)
+  - Maximum of 5 cookies set (`coach` plugin)
+  - Maximum transfer size of 307200 bytes (`pagexray` plugin)
+  - Maximum of 20 http requests (`pagexray` plugin)
+  - Compression should not be missing (`pagexray` plugin)
+  - Maximum of 3 CSS requests (`pagexray` plugin)
+  - Maximum transfer size of image content types to 204800 bytes (`pagexray` plugin)
+  - Maximum 1 DOM redirect (`pagexray` plugin)
+- Sitespeed.io network emulation tests
+  - Native speed
+  - 3G speed
+  - 3G "fast" speed
+- SSL Security tests via SSLyze
+  - Must not be vulnerable to Heartbleed
+  - Must not be vulnerable to CCS Injection
+- Active Security Tests via ZAP
+  - Spider crawl performed
+  - Should have 0 CWE-16 risk alerts (X-Frame-Options Header Not Set)
+  - Should have 0 CWE-525 risk alerts (No Cache-Control and Pragma HTTP Header Set)
+  - Should have 0 CWE-933 risk alerts (Web Browser XSS Protection Not Enabled)
+  - Should have 0 CWE-200 risk alerts (Information Disclosure)
+- Netlify Tests
+  - Production build of application
+  - Header rules
+  - Mixed Content rules
+  - Pages changed
+  - Redirect rules
+- SAST Tests
+  - Out of the box testing by github actions
+  - CodeQL default tests
+  - OSSAR default tests
+
+Of course more tests can be added, these were the simplest ones that I added to demonstrate how an application can hooked up with a series of different automated tests without touching the codebase (this is a lie :) some scripts were added but the actual application was not touched).
+
+### Dockers
+
+The web-app was originally without a docker so I just added my own docker config with nginx so it can be deployed locally and the CI environment. Also this helps in the CI environment to perform the sitespeed.io network emulation tests by spawning dockers in a network,
+
+### Tests in Action
+
+The tests are orchestrated so that everything passes except for the ZAP tests and thus fails the project. Also all Pull Requests will fail unless the vulnerabilities discovered by ZAP are fixed. 
+
+This app is continuously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
+
+**All Tests**
+
+![Screen Recording 2020-12-14 at 11 50 06](https://user-images.githubusercontent.com/3069650/102073590-d0923980-3e03-11eb-8f5f-b024f96593f4.gif)
+
+**SAST & Netlify Tests**
+
+![Screenshot-gh-actions](https://user-images.githubusercontent.com/3069650/102073779-118a4e00-3e04-11eb-85b9-c0c72bebb117.png)
+
+**SSL Tests**
+
+![Screenshot-sslyze-tests](https://user-images.githubusercontent.com/3069650/102073781-12bb7b00-3e04-11eb-8ad5-bf1e45cb6272.png)
+
+**ZAP Tests**
+
+![Screenshot-zap-tests](https://user-images.githubusercontent.com/3069650/102073784-13541180-3e04-11eb-9d33-d7dc71be14f7.png)
+
 
 ## Continue with the original readme below
 

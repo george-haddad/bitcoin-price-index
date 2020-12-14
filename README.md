@@ -22,6 +22,7 @@ This project was created to demonstrate how to integrate performance and securit
   - Used for continous integration
 - [Netlify](https://www.netlify.com/)
   - Used for contunous deployment
+  - Build and internal tests
 - [Github](https://github.com/)
   - Used for source code versioning
   - Used for SAST plugins (CodeQL & OSSAR github actions)
@@ -53,14 +54,24 @@ The following are being tested for now, simple but demonstrates that you can do 
   - 3G speed
   - 3G "fast" speed
 - SSL Security tests via SSLyze
-  - Must not be vulnrable to Heartbleed
-  - Must not be vulnrable to CCS Injection
+  - Must not be vulnerable to Heartbleed
+  - Must not be vulnerable to CCS Injection
 - Active Security Tests via ZAP
   - Spider crawl performed
   - Should have 0 CWE-16 risk alerts (X-Frame-Options Header Not Set)
   - Should have 0 CWE-525 risk alerts (No Cache-Control and Pragma HTTP Header Set)
   - Should have 0 CWE-933 risk alerts (Web Browser XSS Protection Not Enabled)
   - Should have 0 CWE-200 risk alerts (Information Disclosure)
+- Netlify Tests
+  - Production build of application
+  - Header rules
+  - Mixed Content rules
+  - Pages changed
+  - Redirect rules
+- SAST Tests
+  - Out of the box testing by github actions
+  - CodeQL default tests
+  - OSSAR default tests
 
 Of course more tests can be added, these were the simplest ones that I added to demonstrate how an application can hooked up with a series of different automated tests without touching the codebase (this is a lie :) some scripts were added but the actual application was not touched).
 
@@ -70,9 +81,26 @@ The web-app was originally without a docker so I just added my own docker config
 
 ### Tests in Action
 
+The tests are orchestrated so that everything passes except for the ZAP tests and thus fails the project. Also all Pull Requests will fail unless the vulnerabilities discovered by ZAP are fixed. 
 
+This app is continuously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
 
-This app is continously deployed here [https://peaceful-kepler-549198.netlify.com](https://peaceful-kepler-549198.netlify.com)
+**All Tests**
+
+![Screen Recording 2020-12-14 at 11 50 06](https://user-images.githubusercontent.com/3069650/102073590-d0923980-3e03-11eb-8f5f-b024f96593f4.gif)
+
+**SAST & Netlify Tests**
+
+![Screenshot-gh-actions](https://user-images.githubusercontent.com/3069650/102073779-118a4e00-3e04-11eb-85b9-c0c72bebb117.png)
+
+**SSL Tests**
+
+![Screenshot-sslyze-tests](https://user-images.githubusercontent.com/3069650/102073781-12bb7b00-3e04-11eb-8ad5-bf1e45cb6272.png)
+
+**ZAP Tests**
+
+![Screenshot-zap-tests](https://user-images.githubusercontent.com/3069650/102073784-13541180-3e04-11eb-9d33-d7dc71be14f7.png)
+
 
 ## Continue with the original readme below
 

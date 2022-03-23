@@ -1,6 +1,6 @@
 const sslyze = require('../sslyze-report.json');
 
-const scanResults = sslyze.server_scan_results[0].scan_commands_results;
+const scanResults = sslyze.server_scan_results[0].scan_result;
 
 const test_timeout = 900000;
 

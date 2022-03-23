@@ -7,8 +7,8 @@ const test_timeout = 900000;
 describe('SSLyze security testing', () => {
   let hasHeartbleed, hasCcsInjection;
   beforeAll(() => {
-    hasHeartbleed = scanResults.heartbleed.is_vulnerable_to_heartbleed;
-    hasCcsInjection = scanResults.openssl_ccs_injection.is_vulnerable_to_ccs_injection;
+    hasHeartbleed = scanResults.heartbleed.result.is_vulnerable_to_heartbleed;
+    hasCcsInjection = scanResults.openssl_ccs_injection.result.is_vulnerable_to_ccs_injection;
   }, test_timeout);
 
   it('should check if certificate is not vulnerable to heartbleed', () => {

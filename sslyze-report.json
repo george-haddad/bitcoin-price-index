@@ -1,6 +1,6 @@
 {
-    "date_scans_completed": "2022-03-23T09:30:53.162900",
-    "date_scans_started": "2022-03-23T09:30:42.100948",
+    "date_scans_completed": "2022-03-23T10:17:47.746810",
+    "date_scans_started": "2022-03-23T10:17:38.896116",
     "invalid_server_strings": [],
     "server_scan_results": [
         {
@@ -4767,7 +4767,7 @@
                                     "curve_name": "X25519",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "5oj+olH8dUtbHv5oSQRUc6rkLX+6UCLWrR95PMUGihc=",
+                                    "public_bytes": "S/8ZRZiF6ZdwvPPeLn1G/hDxvpzpuQpXZc+q6ckT3xY=",
                                     "size": 253,
                                     "type_name": "ECDH",
                                     "x": null,
@@ -4785,11 +4785,11 @@
                                     "curve_name": "prime256v1",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "BF5Yus9GbPFI/iTNOEopsHeswlpk12tIb/MQzje0WkIGo8kkujVxgS8MpybLIPKGJuQkp0s/WFxRkDdqUCz6QH0=",
+                                    "public_bytes": "BFCe6pQwFiaCN2SS9cL1S/IqZcFnOFbO33xLjE2iwI8SA1Jh6TB13sdB2xnRgYzOpUDqmYpMDozHYfGCf/g7TAI=",
                                     "size": 256,
                                     "type_name": "ECDH",
-                                    "x": "Xli6z0Zs8Uj+JM04Simwd6zCWmTXa0hv8xDON7RaQgY=",
-                                    "y": "o8kkujVxgS8MpybLIPKGJuQkp0s/WFxRkDdqUCz6QH0="
+                                    "x": "UJ7qlDAWJoI3ZJL1wvVL8iplwWc4Vs7ffEuMTaLAjxI=",
+                                    "y": "A1Jh6TB13sdB2xnRgYzOpUDqmYpMDozHYfGCf/g7TAI="
                                 }
                             },
                             {
@@ -4803,11 +4803,11 @@
                                     "curve_name": "prime256v1",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "BHh6HF4fEufpSRrdPHBrTSdHKms4ScfKX7lGzunNk10Scxvo3vfYekXNSs6tOj3uiHJMnFSua1IIYxRsb7M7PaM=",
+                                    "public_bytes": "BAaKLF3qy1BCNPsHFsnW3TazrXJWuvHx3GmwUvccq+TcDkpzE609BLrX/wLNhW0t9ntlU4RZ4a+6MwVmcXaQXXo=",
                                     "size": 256,
                                     "type_name": "ECDH",
-                                    "x": "eHocXh8S5+lJGt08cGtNJ0cqazhJx8pfuUbO6c2TXRI=",
-                                    "y": "cxvo3vfYekXNSs6tOj3uiHJMnFSua1IIYxRsb7M7PaM="
+                                    "x": "BoosXerLUEI0+wcWydbdNrOtcla68fHcabBS9xyr5Nw=",
+                                    "y": "DkpzE609BLrX/wLNhW0t9ntlU4RZ4a+6MwVmcXaQXXo="
                                 }
                             }
                         ],
@@ -6177,7 +6177,7 @@
                                     "is_anonymous": false,
                                     "key_size": 168,
                                     "name": "TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA",
-                                    "openssl_name": "DHE-DSS-DES-CBC3-SHA"
+                                    "openssl_name": "EDH-DSS-DES-CBC3-SHA"
                                 },
                                 "error_message": "TLS alert: handshake failure"
                             },
@@ -6211,7 +6211,7 @@
                                     "curve_name": "X25519",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "XfnTuvGjR8BN4bgTsna/1e2NThNHEhgXgvQkfbyhCXk=",
+                                    "public_bytes": "AE6girkDn+D6qJGQRs/US9g0t8mn47wWzzdmEpRIMl8=",
                                     "size": 253,
                                     "type_name": "ECDH",
                                     "x": null,
@@ -6229,7 +6229,7 @@
                                     "curve_name": "X25519",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "3Av2twtiWG6Vtn0ONCfmgDWSxZXQ1b4+zmVzexmHHBo=",
+                                    "public_bytes": "u2/zKcaMGxDseB7RaIbJNkx4C1Tr95ToIOtYdRs44SU=",
                                     "size": 253,
                                     "type_name": "ECDH",
                                     "x": null,
@@ -6247,7 +6247,7 @@
                                     "curve_name": "X25519",
                                     "generator": null,
                                     "prime": null,
-                                    "public_bytes": "AUXI/Z0eG3i/SDauiVhLBZ3v1moBmMhsVqDCVnT8fW4=",
+                                    "public_bytes": "8/vEYANbOpKUVusFplQy1WV/3zkoYyVASiGhtoDfJyg=",
                                     "size": 253,
                                     "type_name": "ECDH",
                                     "x": null,
@@ -6306,10 +6306,10 @@
                 "connection_type": "DIRECT",
                 "hostname": "peaceful-kepler-549198.netlify.app",
                 "http_proxy_settings": null,
-                "ip_address": "3.125.16.34",
+                "ip_address": "164.90.232.210",
                 "port": 443
             },
-            "uuid": "1047848f-f242-4b45-8dc8-428ccc66e051"
+            "uuid": "88ea5a48-17e2-4b8a-a97c-1f1e3f8615fa"
         }
     ],
     "sslyze_url": "https://github.com/nabla-c0d3/sslyze",

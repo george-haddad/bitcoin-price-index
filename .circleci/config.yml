@@ -22,7 +22,9 @@ jobs:
           command: npm run test:lint
 
   test-sitespeed:
-    machine: true
+    machine:
+      image: ubuntu-2004:current
+    resource_class: medium
     working_directory: ~/repo
     steps:
       - checkout
@@ -52,7 +54,7 @@ jobs:
             - v1-dependencies-
       - run:
           name: 'Install npm modules'
-          command: npm ci
+          command: npm install
       - save_cache:
           paths:
             - node_modules
@@ -75,7 +77,7 @@ jobs:
 
   test-sslyze:
     docker:
-      - image: circleci/python:3.7-node
+      - image: cimg/python:3.10.2-node
     working_directory: ~/repo
     steps:
       - checkout
@@ -120,7 +122,7 @@ jobs:
 
   test-zap:
     docker:
-      - image: circleci/node:12.16
+      - image: cimg/node:17.7.2
       - image: owasp/zap2docker-stable
         name: zap
         command: zap.sh -daemon -host 0.0.0.0 -port 8090 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.disablekey=true

@@ -101,10 +101,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: 'Install setuptools'
-          command: sudo pip install --upgrade setuptools
+          command: pip install --upgrade setuptools
       - run:
           name: 'Install sslyze'
-          command: sudo pip install --upgrade sslyze
+          command: pip install --upgrade sslyze
       - run:
           name: 'Run sslyze'
           command: python -m sslyze --quiet $TARGET_URL --json_out=sslyze-report.json

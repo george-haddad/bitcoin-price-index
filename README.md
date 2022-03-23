@@ -68,10 +68,6 @@ The following are being tested for now, simple but demonstrates that you can do 
   - Mixed Content rules
   - Pages changed
   - Redirect rules
-- SAST Tests
-  - Out of the box testing by github actions
-  - CodeQL default tests
-  - OSSAR default tests
 
 Of course more tests can be added, these were the simplest ones that I added to demonstrate how an application can hooked up with a series of different automated tests without touching the codebase (this is a lie :) some scripts were added but the actual application was not touched).
 

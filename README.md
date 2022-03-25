@@ -1,6 +1,7 @@
 # Bitcoin-Price-Index
 
-[![CircleCI](https://circleci.com/gh/george-haddad/bitcoin-price-index.svg?style=svg&circle-token=0b1efe1fc35a948ab400417b6b3f3a7c1c5c1a98)](https://circleci.com/gh/george-haddad/bitcoin-price-index) [![Netlify Status](https://api.netlify.com/api/v1/badges/92e02947-8a90-4491-a881-b469232e8554/deploy-status)](https://app.netlify.com/sites/peaceful-kepler-549198/deploys) ![Known Vulnerabilities](https://snyk.io/test/github/george-haddad/bitcoin-price-index/badge.svg)
+[![CircleCI](https://circleci.com/gh/george-haddad/bitcoin-price-index.svg?style=svg&circle-token=0b1efe1fc35a948ab400417b6b3f3a7c1c5c1a98)](https://circleci.com/gh/george-haddad/bitcoin-price-index) [![Netlify Status](https://api.netlify.com/api/v1/badges/92e02947-8a90-4491-a881-b469232e8554/deploy-status)](https://app.netlify.com/sites/peaceful-kepler-549198/deploys) [![Known Vulnerabilities](https://snyk.io/test/github/george-haddad/bitcoin-price-index/badge.svg)](https://snyk.io/test/github/george-haddad/bitcoin-price-index)
+
 
 ## DevSecOps Intro
 

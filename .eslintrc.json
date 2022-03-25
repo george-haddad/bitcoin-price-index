@@ -1,15 +1,18 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 6,
     "sourceType": "module",
+    "ecmaVersion": 6,
+    "requireConfigFile": false,
     "ecmaFeatures": {
       "jsx": true,
       "modules": true,
       "experimentalObjectRestSpread": true
     }
   },
-  "extends": ["prettier", "prettier/react"],
+  "extends": [
+    "prettier"
+  ],
   "env": {
     "browser": true,
     "node": true,

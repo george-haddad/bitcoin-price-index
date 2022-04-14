@@ -26,6 +26,11 @@
     "jest": "27.5.1",
     "jest-extended": "^2.0.0",
     "prettier-eslint": "^13.0.0",
+    "moment": "^2.29.2",
+    "react": "^16.13.0",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.0",
+    "react-scripts": "^3.4.3",
     "zaproxy": "^1.0.1"
   },
   "scripts": {

@@ -149,7 +149,8 @@ workflows:
   version: 2
   performance-security-tests:
     jobs:
-      - test-lint
+# Skip this for now
+#      - test-lint
       - test-sitespeed:
           requires:
             - test-lint

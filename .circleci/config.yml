@@ -151,9 +151,9 @@ workflows:
     jobs:
 # Skip this for now
 #      - test-lint
-      - test-sitespeed:
-          requires:
-            - test-lint
+      - test-sitespeed
+#          requires:
+#            - test-lint
       - test-sslyze:
           requires:
             - test-sitespeed

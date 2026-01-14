@@ -1,4 +1,4 @@
-FROM nginx:1.29.1-alpine
+FROM nginx:1.29.4-alpine
 
 WORKDIR /
 COPY ./build /var/www
